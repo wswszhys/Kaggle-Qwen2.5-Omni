@@ -433,7 +433,7 @@ def _get_args():
                         help='Automatically launch the interface in a new tab on the default browser.')
     parser.add_argument('--server-port', type=int, default=7860, help='Demo server port.')
     parser.add_argument('--server-name', type=str, default='127.0.0.1', help='Demo server name.')
-    parser.add_argument('--ui-language', type=str, choices=['en', 'zh'], default='en', help='Display language for the UI.')
+    parser.add_argument('--ui-language', type=str, choices=['en', 'zh'], default='zh', help='Display language for the UI.')
 
     args = parser.parse_args()
     return args
