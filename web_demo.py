@@ -425,7 +425,7 @@ def _get_args():
                         help='Enable flash_attention_2 when loading the model.')
     parser.add_argument('--share',
                         action='store_true',
-                        default=False,
+                        default=True,
                         help='Create a publicly shareable link for the interface.')
     parser.add_argument('--inbrowser',
                         action='store_true',
