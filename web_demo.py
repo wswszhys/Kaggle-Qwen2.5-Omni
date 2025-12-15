@@ -401,12 +401,7 @@ def _launch_demo(args, model, processor):
                     </style>
                 """)
 
-    demo.queue(default_concurrency_limit=100, max_size=100).launch(max_threads=100,
-                                                                ssr_mode=False,
-                                                                share=args.share,
-                                                                inbrowser=args.inbrowser,
-                                                                server_port=args.server_port,
-                                                                server_name=args.server_name,)
+    demo.queue().launch(share=True)
 
 
 DEFAULT_CKPT_PATH = "/kaggle/working/2"
